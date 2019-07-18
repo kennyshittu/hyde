@@ -1,0 +1,39 @@
+/* body {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+.form {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: red;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input-box {
+}
+
+input[type="text"] {
+  width: max-content;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  margin: 1rem;
+  border-bottom: 5px solid red;
+}
+
+input[type="button"] {
+  width: 250px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  margin: 1rem;
+}
+
+ */

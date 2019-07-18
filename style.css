@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Andale Mono, AndaleMono, monospace;
+  z-index: -1; }
+
+.logo {
+  margin-bottom: 2rem; }
+  .logo p {
+    animation: animate 2s ease-in-out infinite;
+    font-style: italic;
+    text-align: center; }
+  .logo img {
+    width: 7rem;
+    padding: 2rem;
+    height: 7rem;
+    animation: animate 4s ease-in-out infinite; }
+
+.logo:nth-child(1) {
+  transition-delay: 0.35s; }
+
+.logo:nth-child(2) {
+  transition-delay: 0.7s; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Montserrat;
+  background-image: url("./images/hyde-bg.JPG"); }
+
+@keyframes animate {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.input-box {
+  position: relative;
+  margin-top: 60px; }
+  .input-box input[type="text"] {
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 100px;
+    transition: all 0.1s ease-out; }
+  .input-box input[type="button"] {
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-out; }
+  .input-box input[type="text"] + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    background: #490b4c;
+    transform: translateZ(0) translateX(0);
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s; }
+  .input-box input[type="text"]:focus + label {
+    transform: translateY(-105%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.1s ease-out; }
+  .input-box input[type="text"]:focus {
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s; }
+  .input-box input[type="button"]:hover {
+    background-color: #ef37dc; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,11 @@
-body {
+body,
+p,
+h4 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  font-family: Andale Mono, AndaleMono, monospace;
-  z-index: -1; }
+  font-family: Andale Mono, AndaleMono, monospace; }
 
 .logo {
   margin-bottom: 2rem; }
@@ -25,6 +26,7 @@ body {
   transition-delay: 0.7s; }
 
 .main {
+  font-family: Andale Mono, AndaleMono, monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,9 +44,11 @@ body {
     opacity: 0; } }
 .input-box {
   position: relative;
-  margin-top: 60px; }
+  margin-top: 60px;
+  font-family: Andale Mono, AndaleMono, monospace; }
   .input-box input[type="text"] {
     display: inline-block;
+    font-family: Andale Mono, AndaleMono, monospace;
     width: 500px;
     height: 40px;
     box-sizing: border-box;
@@ -55,6 +59,7 @@ body {
     transition: all 0.1s ease-out; }
   .input-box input[type="button"] {
     display: inline-block;
+    font-family: Andale Mono, AndaleMono, monospace;
     width: 500px;
     height: 40px;
     box-sizing: border-box;
@@ -64,6 +69,8 @@ body {
     padding: 10px;
     cursor: pointer;
     transition: all 0.1s ease-out; }
+  .input-box ::placeholder {
+    font-family: Andale Mono, AndaleMono, monospace; }
   .input-box input[type="text"] + label {
     position: absolute;
     top: 0;
@@ -71,6 +78,7 @@ body {
     bottom: 0;
     height: 40px;
     line-height: 40px;
+    font-family: Andale Mono, AndaleMono, monospace;
     color: white;
     border-radius: 3px 0 0 3px;
     padding: 0 20px;
@@ -87,6 +95,10 @@ body {
     transition: all 0.3s ease-out;
     transition-delay: 0.2s; }
   .input-box input[type="button"]:hover {
-    background-color: #ef37dc; }
+    background-color: #ef37dc;
+    font-family: Andale Mono, AndaleMono, monospace; }
+
+footer {
+  color: #ef37dc; }
 
 /*# sourceMappingURL=style.css.map */

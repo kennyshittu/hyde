@@ -33,8 +33,17 @@ h4 {
   justify-content: center;
   height: 96vh;
   font-family: Montserrat;
-  background-image: url("./images/hyde-bg.JPG"); }
+  background-image: url("./images/hyde-bg.JPG");
+  background-size: auto;
+  animation: main 1s linear; }
 
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 @keyframes animate {
   0% {
     opacity: 0; }
@@ -57,6 +66,7 @@ h4 {
     border-radius: 3px;
     padding: 10px 10px 10px 100px;
     transition: all 0.1s ease-out; }
+  .input-box .button-register,
   .input-box input[type="button"] {
     display: inline-block;
     font-family: Andale Mono, AndaleMono, monospace;
@@ -90,12 +100,12 @@ h4 {
     transform: translateY(-105%) translateX(0%);
     border-radius: 3px;
     transition: all 0.1s ease-out; }
-  .input-box button-register:focus {
-    padding: 10px;
+  .input-box input[type="button"]:hover {
     transition: all 0.3s ease-out;
-    transition-delay: 0.2s; }
-  .input-box button-register:hover {
-    background-color: #490b4c; }
+    transition-delay: 0.2s;
+    background-color: #ac299f;
+    color: #fff;
+    transform: scale(1.07); }
 
 footer {
   color: #ef37dc;
@@ -111,17 +121,18 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; }
+  transform: scale(1.3);
+  transition: visibility 0s linear 0.75s, opacity 0.75s 0s, transform 0.75s; }
 
 .modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: white;
   padding: 1rem 1.5rem;
   width: 24rem;
+  box-shadow: 15px 15px 15px rgba(68, 68, 68, 0.6);
   border-radius: 0.5rem; }
 
 .close-button {

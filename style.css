@@ -31,7 +31,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 96vh;
   font-family: Montserrat;
   background-image: url("./images/hyde-bg.JPG"); }
 
@@ -90,15 +90,58 @@ h4 {
     transform: translateY(-105%) translateX(0%);
     border-radius: 3px;
     transition: all 0.1s ease-out; }
-  .input-box input[type="text"]:focus {
+  .input-box button-register:focus {
     padding: 10px;
     transition: all 0.3s ease-out;
     transition-delay: 0.2s; }
-  .input-box input[type="button"]:hover {
-    background-color: #ef37dc;
-    font-family: Andale Mono, AndaleMono, monospace; }
+  .input-box button-register:hover {
+    background-color: #490b4c; }
 
 footer {
-  color: #ef37dc; }
+  color: #ef37dc;
+  text-align: center;
+  background-color: #490b4c; }
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; }
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem; }
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray; }
+
+.close-button:hover {
+  background-color: darkgray; }
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  color: #490b4c;
+  text-align: center;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
 
 /*# sourceMappingURL=style.css.map */

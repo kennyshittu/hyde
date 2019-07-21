@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  overflow-x: none;
+  overflow: none; }
+
 body,
 p,
 h4 {
@@ -128,7 +133,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
   width: 24rem;

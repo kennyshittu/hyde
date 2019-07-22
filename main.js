@@ -13,3 +13,5 @@ const windowOnClick = (e) => {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+//[hyde-api.herokuapp.com/users/

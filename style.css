@@ -160,4 +160,12 @@ footer {
   text-align: center;
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
 
+@media only screen and (max-width: 148px) {
+  .welcome-text {
+    text-align: center;
+    padding: 0.5rem; }
+
+  input[type="text"] {
+    width: 100px; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 body {
+  position: relative;
   width: 100%;
-  overflow-x: none;
-  overflow: none; }
+  min-height: 100vh;
+  background-image: url("./images/hyde-bg.JPG"); }
 
 body,
 p,
@@ -13,7 +14,8 @@ h4 {
   font-family: Andale Mono, AndaleMono, monospace; }
 
 .logo {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
   .logo p {
     animation: animate 2s ease-in-out infinite;
     font-style: italic;
@@ -32,14 +34,12 @@ h4 {
 
 .main {
   font-family: Andale Mono, AndaleMono, monospace;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 96vh;
   font-family: Montserrat;
-  background-image: url("./images/hyde-bg.JPG");
-  background-size: auto;
   animation: main 1s linear; }
 
 @keyframes main {
@@ -56,6 +56,12 @@ h4 {
     opacity: 1; }
   100% {
     opacity: 0; } }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
 .input-box {
   position: relative;
   margin-top: 60px;
@@ -115,7 +121,10 @@ h4 {
 footer {
   color: #ef37dc;
   text-align: center;
-  background-color: #490b4c; }
+  background-color: #490b4c;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .modal {
   position: fixed;
@@ -160,12 +169,16 @@ footer {
   text-align: center;
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
 
-@media only screen and (max-width: 148px) {
+@media only screen and (max-width: 576px) {
   .welcome-text {
-    text-align: center;
-    padding: 0.5rem; }
+    text-align: center; }
 
-  input[type="text"] {
-    width: 100px; } }
+  .form input[type="text"] {
+    width: 100%; }
+  .form input[type="button"] {
+    width: 100%; }
+
+  .modal .modal-content {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 let modal = document.querySelector(".modal");
-let trigger = document.querySelector(".button-register");
 let closeButton = document.querySelector(".close-button");
 
 const toggleModal = () => {
@@ -13,8 +12,31 @@ const windowOnClick = (e) => {
   }
 }
 
-trigger.addEventListener("click", toggleModal);
+$('#myForm').submit(function(e){
+  e.preventDefault();
+  let formData = $("#myForm").serializeArray();
+  const [nameFiled, emailField, phoneField ] = formData;
+
+  let jsonData = {
+    name: nameFiled.value,
+    email: emailField.value,
+    number: phoneField.value
+  };
+
+  $.ajax({
+      url:'https://hyde-api.herokuapp.com/users/',
+      type:'post',
+      data:jsonData,
+      success:function(data){
+          $('#message').html(data.message);
+          toggleModal();
+      },
+      error: function(data) {
+        $('#message').html(data.responseJSON.message);
+        toggleModal();
+      }
+  });
+});
+
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-
-//[hyde-api.herokuapp.com/users/

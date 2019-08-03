@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-
+    <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <title>HYDE INC</title>
   </head>
   <body>
@@ -24,25 +24,25 @@
         method="POST"
       >
         <div class="input-box">
-          <input type="text" placeholder="Name" value="" />
+          <input type="text" name="name" placeholder="Name" />
           <label for="">Name</label>
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Email" value="" />
+          <input type="text" name="email" placeholder="Email" />
           <label for="">Email</label>
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Phone Number" value="" />
+          <input type="text" name="number" placeholder="Phone Number" />
           <label for="">Number</label>
         </div>
         <div class="input-box">
-          <input class="button-register" type="button" value="REGISTER" />
+          <input class="button-register" type="submit" value="REGISTER" />
         </div>
       </form>
       <div class="modal">
         <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h1>
+          <h1 id="message">
             Welcome on<br />
             board!
           </h1>

@@ -2,7 +2,10 @@ let modal = document.querySelector(".modal");
 let trigger = document.querySelector(".button-register");
 let closeButton = document.querySelector(".close-button");
 
-const toggleModal = () => modal.classList.toggle("show-modal");
+const toggleModal = () => {
+  modal.classList.toggle("show-modal");
+  document.getElementById('myForm').reset();
+}
 
 const windowOnClick = (e) => {
   if (e.target === modal) {

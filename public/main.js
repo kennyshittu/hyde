@@ -27,11 +27,13 @@ $('#myForm').submit(function(e){
       url:'https://hyde-api.herokuapp.com/users/',
       type:'post',
       data:jsonData,
-      success:function(data){
+      success: function(data){
+        console.log("in success handler")
           $('#message').html(data.message);
           toggleModal();
       },
       error: function(data) {
+        console.log("in error handler")
         $('#message').html(data.responseJSON.message);
         toggleModal();
       }
